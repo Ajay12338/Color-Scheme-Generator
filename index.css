@@ -48,6 +48,7 @@ header > select {
   color: #ffffff;
   font-size: 1.75rem;
   cursor: pointer;
+  user-select: none;
 }
 input[type="color"] {
   width: 61px;
@@ -103,4 +104,8 @@ footer > div {
   background-color: #1f2937;
   color: #ffffff;
   box-shadow: 0px -4px 12px 0px #000000;
+}
+img {
+  width: 40px;
+  height: 40px;
 }

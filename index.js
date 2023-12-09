@@ -1,14 +1,15 @@
 import darkMode from "./darkMode.js";
 import lightMode from "./lightMode.js";
 
-const colorPicker = document.getElementById("color-picker");
 export const getColorBtn = document.getElementById("fetch-color");
 export const colorScheme = document.getElementById("color-scheme");
-const colorLists = document.getElementById("color-lists");
-const darkModeCheckbox = document.getElementById("toggleBtn");
 export const footer = document.getElementById("footer");
 export const body = document.querySelector("body");
 export const header = document.querySelector("header");
+
+const colorPicker = document.getElementById("color-picker");
+const colorLists = document.getElementById("color-lists");
+const darkModeCheckbox = document.getElementById("toggleBtn");
 
 const baseURL = " https://www.thecolorapi.com/scheme";
 
@@ -44,7 +45,7 @@ const generateColors = (colors) => {
 getColorBtn.addEventListener("click", () => {
   let url = `${baseURL}?hex=${colorPicker.value.slice(1)}&mode=${
     colorScheme.value
-  }&count=5`;
+  }&count=10`;
   fetch(url)
     .then((response) => response.json())
     .then((data) => generateColors(data.colors));
