@@ -49,6 +49,10 @@ header > select {
   font-size: 1.75rem;
   cursor: pointer;
   user-select: none;
+  transition: rotate 1s;
+}
+.toggle:hover {
+  rotate: 360deg;
 }
 input[type="color"] {
   width: 61px;
@@ -90,6 +94,7 @@ footer > div {
 }
 .dark-body {
   background-color: #1f2937;
+  border: none;
 }
 .dark-select {
   background-color: #1f293a;
@@ -108,4 +113,9 @@ footer > div {
 img {
   width: 40px;
   height: 40px;
+  cursor: pointer;
+  transition: rotate 0.5s;
+}
+img:hover {
+  rotate: 360deg;
 }
