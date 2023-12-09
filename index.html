@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Color Picker</title>
+  </head>
+  <body>
+    <header>
+      <input
+        type="color"
+        name="color-picker"
+        id="color-picker"
+        value="#F55A5A"
+      />
+      <select name="color-scheme" id="color-scheme">
+        <option value="monochrome">Monochrome</option>
+        <option value="monochrome-light">Monochrome-light</option>
+        <option value="monochrome-dark">Monochrome-dark</option>
+        <option value="analogic">Analogic</option>
+        <option value="complement">Complement</option>
+        <option value="analogic-complement">Analogic-complement</option>
+        <option value="triad">Triad</option>
+        <option value="quad">Quad</option>
+      </select>
+      <button id="fetch-color">Get color scheme</button>
+      <input type="checkbox" id="toggleBtn" />
+      <label for="toggleBtn" class="toggle"
+        ><i class="fa-regular fa-moon"></i
+      ></label>
+    </header>
+    <div class="color-lists" id="color-lists"></div>
+    <footer id="footer"></footer>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
