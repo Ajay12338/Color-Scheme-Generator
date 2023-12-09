@@ -1,2 +1,3 @@
-Color Scheme Generator
-color scheme generator using vanila js
+# Color Scheme Generator
+
+color scheme generator using Vanila JS
