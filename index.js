@@ -2,11 +2,13 @@ import darkMode from "./darkMode.js";
 import lightMode from "./lightMode.js";
 
 const colorPicker = document.getElementById("color-picker");
-const getColorBtn = document.getElementById("fetch-color");
-const colorScheme = document.getElementById("color-scheme");
+export const getColorBtn = document.getElementById("fetch-color");
+export const colorScheme = document.getElementById("color-scheme");
 const colorLists = document.getElementById("color-lists");
 const darkModeCheckbox = document.getElementById("toggleBtn");
-const footer = document.getElementById("footer");
+export const footer = document.getElementById("footer");
+export const body = document.querySelector("body");
+export const header = document.querySelector("header");
 
 const baseURL = " https://www.thecolorapi.com/scheme";
 
